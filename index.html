@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app glass" id="startScreen">
+    <h1>Sudoku</h1>
+
+    <div class="controls">
+      <select id="gridSize">
+        <option value="9">9 × 9</option>
+        <option value="6">6 × 6</option>
+      </select>
+
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+
+    <button id="startGame">Start Game</button>
+  </div>
+
+  <div class="app glass" id="gameScreen" style="display:none;">
+    <h1>Sudoku</h1>
+
+    <div class="controls">
+      <button id="newGame">New</button>
+      <button id="reset">Reset</button>
+      <button id="hint">Hint</button>
+      <div id="timer">00:00</div>
+    </div>
+
+    <div id="board"></div>
+
+    <div class="numbers">
+      <button>1</button><button>2</button><button>3</button>
+      <button>4</button><button>5</button><button>6</button>
+      <button>7</button><button>8</button><button>9</button>
+      <button id="clear">X</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
